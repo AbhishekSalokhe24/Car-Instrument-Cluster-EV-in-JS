@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.v-div{
+    height: 30px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.v-div .v-meter{
+    height: 30px;
+    width: 70%;
+    /* background-color: #008cff; */
+    border-radius: 10px;
+    background: rgb(15,205,24);
+    background: linear-gradient(90deg, rgba(15,205,24,1) 0%, rgba(179,193,0,1) 50%, rgba(255,0,0,1) 100%);
+
+}
+.main-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+    background: rgb(69,71,75);
+    background: linear-gradient(90deg, rgba(69,71,75,1) 0%, rgba(181,192,208,1) 50%, rgba(69,71,75,1) 100%);
+}
+.sub-container{
+    height: 300px;
+    width: 500px;
+    background-color: rgb(17, 17, 17); 
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    /* border: 1px solid #fff; */
+}
+.Info-meter{
+   padding: 15px 15px;
+   height: 100%;
+}
+
+.svg-container {
+    position: relative;
+}
+  #speed {
+    color: white;
+    font-size: 36px;
+    line-height: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    bottom: 65px;
+    z-index: 1;
+  }
+  #meter-bg-bar {
+    animation: dash 4s linear forwards infinite;
+    stroke-dasharray: 615;
+  }
+  /* @keyframes dash {
+    0%,
+    100% {
+      stroke-dashoffset: 615;
+    }
+    25% {
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dashoffset: 307.5;
+    }
+    75% {
+      stroke-dashoffset: 0;
+    }
+  } */
+  
+  
+  #battery {
+    box-sizing: content-box;
+    height: 7.8em;
+    width: 17.5em;
+    border: 0.2em solid #246aed;
+    margin: auto;
+    border-radius: 0.6em;
+    position: relative;
+    display: grid;
+    place-items: center;
+  }
+  #battery:before {
+    position: absolute;
+    content: "";
+    height: 5em;
+    width: 1.1em;
+    background-color: #246aed;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: -1.6em;
+    border-radius: 0 0.3em 0.3em 0;
+  }
+  #charge {
+    position: absolute;
+    height: 6.5em;
+    width: 8rem;
+    background-color: #0dcaf0;
+    border-radius: 0.6em;
+    top: 0.6em;
+    left: 0.6em;
+  }
+  #charge-level {
+    position: absolute;
+    font-size: 3em;
+    font-weight: 500;
+  }
+  #charging-time {
+    text-align: center;
+    font-size: 1.7em;
+    margin-top: 1.4em;
+  }
+  .active {
+    animation: charge-animation 3s infinite linear;
+  }
+  /* @keyframes charge-animation {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 16.25em;
+    }
+  } */
+  
